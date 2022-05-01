@@ -24,4 +24,5 @@ done
 - https://github.com/mozilla/web-ext
 - https://developer.chrome.com/docs/extensions/mv3/manifest
 - https://developer.chrome.com/docs/extensions/mv3/override/
+- https://developer.chrome.com/docs/extensions/mv3/linux_hosting/
 - https://github.com/jimschubert/NewTab-Redirect
