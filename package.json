@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "web-ext run -t chromium",
+    "build": "web-ext build",
+    "prettier": "prettier -w .",
+    "prettier:check": "prettier -c ."
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  }
+}
