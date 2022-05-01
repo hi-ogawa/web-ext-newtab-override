@@ -11,7 +11,9 @@ jobs:
       - run: npm ci
       - run: npm run prettier:check
       - run: sudo apt-get install -y --no-install-recommends chromium-browser
-      - run: sudo chromium --headless --disable-gpu --pack-extension=src; ls -l src*
+      - uses: GabrielBB/xvfb-action@v1
+        with:
+          run: npm run build:crx
       - run: cp src.crx newtab-override.crx
       - uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
