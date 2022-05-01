@@ -2,6 +2,8 @@
   "scripts": {
     "dev": "web-ext run -t chromium",
     "build": "web-ext build",
+    "build:crx": "chromium --pack-extension=src",
+    "clean": "rm -rf web-ext-artifacts src.crx src.pem",
     "prettier": "prettier -w .",
     "prettier:check": "prettier -c ."
   },
