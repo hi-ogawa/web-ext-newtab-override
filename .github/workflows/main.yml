@@ -10,7 +10,7 @@ jobs:
           node-version: "16.15.0"
       - run: npm ci
       - run: npm run prettier:check
-      - run: apt-get install -y --no-install-recommends chromium-browser
+      - run: sudo apt-get install -y --no-install-recommends chromium-browser
       - run: npm run build:crx
       - run: cp src.crx newtab-override.crx
       - uses: softprops/action-gh-release@v1
