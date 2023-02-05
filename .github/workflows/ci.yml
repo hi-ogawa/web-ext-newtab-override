@@ -15,9 +15,8 @@ jobs:
       - run: pnpm lint-check
       - uses: browser-actions/setup-chrome@v1
       - run: chrome --pack-extension=src
-      - run: ls -lh
-      - run: cp src.crx newtab-override.crx
+      - run: test -f src.crx
       - uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: newtab-override.crx
+          files: src.crx
