@@ -1,13 +1,9 @@
 # web-ext-newtab-override
 
 ```sh
-web-ext --version # 6.8.0
-
-npm i
-
-npm run dev
-
-npm run build-crx
+pnpm i
+pnpm dev
+pnpm build
 ```
 
 ## icons
