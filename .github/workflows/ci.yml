@@ -13,10 +13,11 @@ jobs:
           node-version: 16
       - run: pnpm i
       - run: pnpm lint-check
-      - uses: browser-actions/setup-chrome@v1
-      - run: chrome --pack-extension=src
-      - run: test -f src.crx
-      - uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: src.crx
+      - run: pnpm build
+      # - uses: browser-actions/setup-chrome@v1
+      # - run: chrome --pack-extension=src
+      # - run: test -f src.crx
+      # - uses: softprops/action-gh-release@v1
+      #   if: startsWith(github.ref, 'refs/tags/')
+      #   with:
+      #     files: src.crx
