@@ -7,7 +7,7 @@ npm i
 
 npm run dev
 
-npm run build:crx
+npm run build-crx
 ```
 
 ## icons
