@@ -2,7 +2,6 @@
   "scripts": {
     "dev": "web-ext run -t chromium",
     "build": "web-ext build --overwrite-dest",
-    "build-crx": "chromium --pack-extension=src",
     "preview": "npx web-ext run -t chromium",
     "clean": "rm -rf web-ext-artifacts src.crx src.pem",
     "lint": "run-s lint:*",
